@@ -1,0 +1,28 @@
+SOAP
+
+Soap jest to rodzaj Web Service, który wykorzystuje protoków komunikacyjny soap.
+Sk³ada siê on z:
+- SOAP (Simple Object Access Protocol) - to prosty protokó³ komunikacyjny oparty na  jêzyku 
+	XML, umo¿liwiaj¹cy przekazywanie wywo³añ zdalnych komponentów Web Services. SOAP 
+	mo¿e  wspó³dzia³aæ  z  dowolnym  niskopoziomowym  sieciowym  mechanizmem 
+	transportowym,  np.  HTTP,  HTTPS,  SMTP,  JMS,  RMI;
+- WSDL – jêzyk opisu interfejsu. Opisuje on, jak wygl¹da web service, a na jego podstawie
+	klient mo¿e dokoncaæ automatycznej transformacji do obiektów;
+- UDDI – s³u¿¹cej do rejestracji udostêpnianych komponentów us³ugowych. Jest to publiczna
+	baza danych, gdzie twórca web servicu mo¿e go dodaæ, a klient mo¿e bo pobraæ.
+
+Istniej¹ dwa tryby Soap. Jedyna ró¿nica miêdzy nimi to wygl¹d WSDL. W RPC jest chyba 
+bardziej czytelny:
+- document: W  trybie  dokumentowym  us³uga  otrzymuje  tylko  jeden  parametr wywo³ania, 
+	którym jest dokument XML;
+- rpc (Remote Procedure Call): w  trybie  RPC  wywo³anie  ma  charakter  tradycyjny  – 
+	komponentowi  przekazywana  jest  lista  parametrów  formalnych  wraz  z  ich  bie¿¹cymi 
+	wartoœciami.
+	
+Przyk³ad serwisu:
+localhost:8080/WsSoapService/HelloWorldSoap
+
+Przyk³ad wsdl:
+localhost:8080/WsSoapService/HelloWorldSoap?wsdl
+
+

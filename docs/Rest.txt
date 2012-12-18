@@ -1,0 +1,55 @@
+REST
+
+REST (ang. REpresentational State Transfer) jest szczególnym rodzajem Web Services.
+Jest to po prostu zespó³ abstrakcyjnych architektonicznych za³o¿eñ kontaktowania siê przez HTTP.
+Je¿eli trzymamy siê tych za³o¿eñ wtedy mo¿na powiedzieæ, ¿e u¿ywamy REST. 
+
+Te za³o¿enia to:
+- GET: metoda HTTP s³u¿¹ca do pobierania danych. Mo¿e byæ wiêc wykonywana nieskoñczenie wiele razy, 
+  a nigdy nie zmieni stanu na serwerze.
+  Przyk³ady URL:
+	* http://host/users				- pobieranie listy wszystkich userów
+	* http://host/users/1			- pobieranie usera o id 1
+- POST: metoda HTTP s³u¿¹ca do tworzenia nowych danych;
+  Przyk³ady URL:	
+	* http://host/users
+- PUT: metoda HTTP s³u¿¹ca do aktualizacji danych;
+  Przyk³ady URL:
+	* http://host/users/1
+- DELETE: metoda HTTP s³u¿¹ca do usuwania danych. 
+  Przyk³ady URL;
+	* http://host/users/1
+	
+---
+
+REST IN WEB APPLICATIONS
+
+Aplikacje Webowe mog¹ byæ budowane w oparciu o REST. Nie spe³niaj¹ one do koñca wszystkich 
+za³o¿eñ architektonicznych, poniewa¿:
+- nie komunikuj¹ siê dwie applikacje;
+- form obs³uguje tylko metody GET i POST;
+- url dla przejrzystoœci nie spe³nia paradygmatu. Na przyk³ad przy usuwaniu potrzebne jest najpierw
+  najczêœciej potwierdzenie.
+	
+---
+
+REST CLIENTS
+
+Klienci Rest to:
+- Url;
+- Apache HttpClient;
+- Resteasy;
+- Jersey;
+- itd.
+
+---
+
+REST SERVERS
+
+Serwery Rest to:
+- Resteasy;
+- Jersey;
+- Spring3Mvc;
+- idt.
+
+---
